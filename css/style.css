@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f3f6;
+    color: black;
+    line-height: 1.4;
+}
+
+header {
+    background: var(--main-bg-color);
+    font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    padding: 0px 23px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 23px;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.search input {
+    width: 450px;
+    height: 35px;
+    margin: 0px 13px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+div svg {
+    width: 17px;
+    height: 14px;
+    margin: -3px -40px;
+    cursor: pointer;
+}
+
+button {
+    width: 105px;
+    height: 31px;
+    margin-left: 50px;
+    cursor: pointer;
+    border-style: hidden;
+    background-color: white;
+    font-family: Roboto, Arial, sans-serif;
+    border-radius: 1.5px;
+}
+
+main {
+    min-height: calc(100vh - 58px - 8vh);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.container img {
+    height: 400px;
+    width: 1200px;
+}
+
+.list-items {
+    display: flex;
+    background-color: white;
+    margin-top: 12px;
+}
+
+.content {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: bold;
+}
+
+.content h2 {
+    word-wrap: break-word;
+    margin-left: 41px;
+}
+
+.content img {
+    width: 200px;
+    height: 188px;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    display: none;
+    position: relative;
+    color: white;
+}
+
+footer {
+    height: 8vh;
+    display: flex;
+    background-color: var(--main-bg-color);
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    nav ul {
+        display: none;
+    }
+
+    nav div input,
+    svg,
+    button {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        margin-left: 345px;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        height: 58px;
+    }
+}
